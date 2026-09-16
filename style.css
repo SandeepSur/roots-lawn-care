@@ -40,11 +40,20 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 24px;
+    gap: 12px;
+    font-size: 22px;
     font-weight: 700;
     color: var(--dark-green);
     letter-spacing: -0.5px;
+}
+
+.brand-logo-img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .mobile-toggle {
@@ -1127,6 +1136,21 @@ body {
     gap: 15px;
 }
 
+.contact-phone a {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
+
+.contact-phone a:visited,
+.contact-phone a:hover,
+.contact-phone a:focus {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
 .phone-info {
     display: flex;
     flex-direction: column;
@@ -1134,13 +1158,17 @@ body {
 
 .phone-label {
     font-size: 14px;
-    color: #99ab3a;
+    color: #99ab3a !important;
     margin-bottom: 2px;
+    text-decoration: none !important;
 }
 
 .phone-number {
     font-size: 24px;
     font-weight: 600;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    line-height: 1.2;
 }
 
 .contact-right {
@@ -1319,6 +1347,22 @@ body {
     gap: 10px;
     font-size: 24px;
     font-weight: 600;
+    color: #ffffff !important;
+}
+
+.footer-phone-number a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-phone-number a:visited,
+.footer-phone-number a:hover,
+.footer-phone-number a:focus {
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
 .footer-info {
