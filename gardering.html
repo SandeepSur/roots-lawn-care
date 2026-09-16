@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardering | EJM Landscape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:inherit;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L13.8 4.2L18 2.4L18.6 7.2L23.4 8.4L20.4 12L23.4 15.6L18.6 16.8L18 21.6L13.8 19.8L12 24L10.2 19.8L6 21.6L5.4 16.8L0.6 15.6L3.6 12L0.6 8.4L5.4 7.2L6 2.4L10.2 4.2L12 0Z" fill="#a6b835"/>
+                    <path d="M12 5.4L13.2 8.4L16.2 7.2L15.6 10.8L19.2 11.4L16.8 13.8L19.2 16.2L15.6 16.8L16.2 20.4L13.2 19.2L12 22.2L10.8 19.2L7.8 20.4L8.4 16.8L4.8 16.2L7.2 13.8L4.8 11.4L8.4 10.8L7.8 7.2L10.8 8.4L12 5.4Z" fill="#1a4030"/>
+                </svg>
+                <span>EJM Landscape</span>
+            </a>
+        </div>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12" class="line-middle"></line>
+                <line x1="3" y1="6" x2="21" y2="6" class="line-top"></line>
+                <line x1="3" y1="18" x2="21" y2="18" class="line-bottom"></line>
+            </svg>
+        </button>
+
+        <div class="nav-menu">
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About us</a>
+                <a href="gardering.html" class="active">Services</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#blog">Blog</a>
+                <a href="#contact">Contact us</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+12896805851" class="btn btn-lime">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    +1 289-680-5851
+                </a>
+                <a href="#contact" class="btn btn-dark">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- GARDERING HERO SECTION (Screenshot 1) -->
+        <section class="gardening-hero-container">
+            <div class="gardening-hero-grid">
+                <!-- Left Card -->
+                <div class="gardening-hero-card reveal-up">
+                    <div class="gardening-corner-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#1a4030">
+                            <ellipse cx="6" cy="6" rx="3.2" ry="1.6" transform="rotate(45 6 6)"/>
+                            <ellipse cx="18" cy="6" rx="3.2" ry="1.6" transform="rotate(-45 18 6)"/>
+                            <ellipse cx="6" cy="18" rx="3.2" ry="1.6" transform="rotate(-45 6 18)"/>
+                            <ellipse cx="18" cy="18" rx="3.2" ry="1.6" transform="rotate(45 18 18)"/>
+                        </svg>
+                    </div>
+                    <span class="service-badge">SERVICES</span>
+                    <h1>Gardering</h1>
+                    <p>Crafting stunning garden spaces that bring your outdoor vision to life with beauty and precision. Backed by years of experience and a passion for transforming outdoor spaces, we offer a full suite of gardening services tailored to suit your local climate, lifestyle, and vision.</p>
+                    <a href="#contact" class="btn-quote">Request a Quote</a>
+                </div>
+
+                <!-- Right Photo -->
+                <div class="gardening-hero-img-wrap reveal-fade" style="transition-delay: 0.15s;">
+                    <img src="assets/gardening_hero.jpg" alt="Professional gardener caring for hedges and shrubs">
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT WE DO / PREMIER GARDENING SERVICES (Screenshots 2 - 5) -->
+        <section class="gardening-tabs-section">
+            <!-- Header (2 columns) -->
+            <div class="gardening-tabs-header reveal-up">
+                <div class="tabs-header-left">
+                    <span class="section-subtitle">WHAT WE DO</span>
+                    <h2>Premier Gardening<br>Services</h2>
+                </div>
+                <div class="tabs-header-right">
+                    <p>With years of hands-on experience and a genuine passion for crafting beautiful outdoor spaces, we offer a full suite of gardening services tailored to suit your lifestyle and local climate. Whether you're envisioning a lush, vibrant garden, a tranquil native retreat, or a practical outdoor living space, our skilled team is here to bring your ideas to life. Every garden is unique, which is why we deliver personalised solutions designed around your specific needs, preferences, and the natural character of your space.</p>
+                </div>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="services-tab-nav reveal-up" style="transition-delay: 0.1s;">
+                <button class="tab-btn active" data-tab="tab-makeovers">
+                    <svg class="tab-flower-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="12" y1="2" x2="12" y2="22"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                        <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"/>
+                    </svg>
+                    <span>Garden Makeovers</span>
+                </button>
+
+                <button class="tab-btn" data-tab="tab-restorations">
+                    <svg class="tab-flower-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="12" y1="2" x2="12" y2="22"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                        <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"/>
+                    </svg>
+                    <span>Garden Restorations</span>
+                </button>
+
+                <button class="tab-btn" data-tab="tab-landscape">
+                    <svg class="tab-flower-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="12" y1="2" x2="12" y2="22"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                        <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"/>
+                    </svg>
+                    <span>Landscape Gardening</span>
+                </button>
+
+                <button class="tab-btn" data-tab="tab-maintenance">
+                    <svg class="tab-flower-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="12" y1="2" x2="12" y2="22"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                        <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"/>
+                    </svg>
+                    <span>Seasonal Garden Maintenance</span>
+                </button>
+            </div>
+
+            <!-- Tab Panels -->
+            <div class="services-tab-content">
+                <!-- Tab 1: Garden Makeovers (Screenshot 2) -->
+                <div class="tab-panel active" id="tab-makeovers">
+                    <div class="tab-info-col">
+                        <p>Reimagine your outdoor space with our professional garden makeover services. We collaborate with you to design and bring to life a beautiful garden that reflects your personal style while boosting your property's curb appeal and value. Our comprehensive garden makeovers include:</p>
+                        <a href="#contact" class="btn-quote">Get a Quote</a>
+                    </div>
+                    <div class="tab-features-col">
+                        <ul class="tab-features-list">
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Concept design and planning</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Plant selection and installation</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Irrigation system installation</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Soil preparation and improvement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Garden Restorations (Screenshot 3) -->
+                <div class="tab-panel" id="tab-restorations">
+                    <div class="tab-info-col">
+                        <p>Bring neglected or overgrown gardens back to life with our expert garden restoration services. We carefully assess your current space, remove unwanted growth, and reintroduce structure, health, and beauty to your garden. Whether it's reviving historic plantings or modernizing a tired layout, we ensure your garden flourishes once again.</p>
+                        <a href="#contact" class="btn-quote">Get a Quote</a>
+                    </div>
+                    <div class="tab-features-col">
+                        <ul class="tab-features-list">
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Removal of weeds and invasive plants</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Pruning and reshaping overgrown trees and shrubs</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Soil revitalization and fertilization</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Lawn restoration or reseeding</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Replanting with suitable, healthy species</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Landscape Gardening (Screenshot 4) -->
+                <div class="tab-panel" id="tab-landscape">
+                    <div class="tab-info-col">
+                        <p>Transform your property into a harmonious blend of nature and design with our landscape gardening expertise. From small courtyards to expansive estates, we create functional, visually stunning outdoor spaces that suit your lifestyle and enhance your home's surroundings.</p>
+                        <a href="#contact" class="btn-quote">Get a Quote</a>
+                    </div>
+                    <div class="tab-features-col">
+                        <ul class="tab-features-list">
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Tailored landscape design concepts</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Planting schemes for year-round beauty</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Installation of water features and ponds</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Construction of patios, decks, and pathways</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Integration of lighting for ambiance and safety</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Seasonal Garden Maintenance (Screenshot 5) -->
+                <div class="tab-panel" id="tab-maintenance">
+                    <div class="tab-info-col">
+                        <p>Keep your garden looking its best all year round with our seasonal maintenance services. We adjust our care to the needs of each season, ensuring healthy growth, vibrant colors, and a tidy appearance no matter the time of year.</p>
+                        <a href="#contact" class="btn-quote">Get a Quote</a>
+                    </div>
+                    <div class="tab-features-col">
+                        <ul class="tab-features-list">
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Spring planting and soil preparation</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Summer pruning and watering schedules</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Autumn leaf clearance and plant protection</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Winter pruning and frost protection</span>
+                            </li>
+                            <li class="tab-feature-item">
+                                <div class="tab-feature-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="12" y1="3" x2="12" y2="21"/>
+                                        <line x1="3" y1="12" x2="21" y2="12"/>
+                                        <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                        <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                    </svg>
+                                </div>
+                                <span class="tab-feature-text">Seasonal fertilization and mulching</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MORE GARDENING SERVICES WE OFFER (IMAGE 1) -->
+        <section class="more-services-wrapper reveal-up">
+            <!-- 5-Leaf Crown sitting on top of card -->
+            <div class="leaf-crown-container">
+                <img src="assets/leaf_crown.png" alt="Decorative leaf crown">
+            </div>
+
+            <div class="more-services-card">
+                <!-- Top Corner Seed Accents -->
+                <div class="more-services-corner-left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#a6b835">
+                        <ellipse cx="6" cy="6" rx="3.2" ry="1.6" transform="rotate(45 6 6)"/>
+                        <ellipse cx="18" cy="6" rx="3.2" ry="1.6" transform="rotate(-45 18 6)"/>
+                        <ellipse cx="6" cy="18" rx="3.2" ry="1.6" transform="rotate(-45 6 18)"/>
+                        <ellipse cx="18" cy="18" rx="3.2" ry="1.6" transform="rotate(45 18 18)"/>
+                    </svg>
+                </div>
+                <div class="more-services-corner-right">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#a6b835">
+                        <ellipse cx="6" cy="6" rx="3.2" ry="1.6" transform="rotate(45 6 6)"/>
+                        <ellipse cx="18" cy="6" rx="3.2" ry="1.6" transform="rotate(-45 18 6)"/>
+                        <ellipse cx="6" cy="18" rx="3.2" ry="1.6" transform="rotate(-45 6 18)"/>
+                        <ellipse cx="18" cy="18" rx="3.2" ry="1.6" transform="rotate(45 18 18)"/>
+                    </svg>
+                </div>
+
+                <div class="more-services-header">
+                    <span class="sub-badge">MORE GARDENING SERVICES WE OFFER</span>
+                    <h2>Expert Solutions to Keep Your Garden<br>Healthy, Beautiful, and Thriving</h2>
+                    <p>Comprehensive gardening services including:</p>
+                </div>
+
+                <div class="more-services-divider"></div>
+
+                <div class="more-services-grid">
+                    <!-- Column 1 -->
+                    <div class="more-service-item reveal-up" style="transition-delay: 0.05s;">
+                        <div class="more-service-badge float-anim">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                <line x1="12" y1="3" x2="12" y2="21"/>
+                                <line x1="3" y1="12" x2="21" y2="12"/>
+                                <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                            </svg>
+                        </div>
+                        <h3>Hedge Trimming</h3>
+                        <p>Keep your hedges healthy and beautiful with expert trimming that enhances your garden's look and promotes strong growth.</p>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="more-service-item reveal-up" style="transition-delay: 0.15s;">
+                        <div class="more-service-badge float-anim">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                <line x1="12" y1="3" x2="12" y2="21"/>
+                                <line x1="3" y1="12" x2="21" y2="12"/>
+                                <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                            </svg>
+                        </div>
+                        <h3>Tree Trimming</h3>
+                        <p>Keep your trees healthy, safe, and beautiful with expert trimming by certified arborists using best practices to maintain structure and appearance.</p>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="more-service-item reveal-up" style="transition-delay: 0.25s;">
+                        <div class="more-service-badge float-anim">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                <line x1="12" y1="3" x2="12" y2="21"/>
+                                <line x1="3" y1="12" x2="21" y2="12"/>
+                                <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                            </svg>
+                        </div>
+                        <h3>Turf Laying</h3>
+                        <p>Get a lush, green lawn instantly with expert turf laying using premium grass varieties perfectly suited for varying climate and environments.</p>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="more-service-item reveal-up" style="transition-delay: 0.35s;">
+                        <div class="more-service-badge float-anim">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                <line x1="12" y1="3" x2="12" y2="21"/>
+                                <line x1="3" y1="12" x2="21" y2="12"/>
+                                <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                            </svg>
+                        </div>
+                        <h3>Garden Planting</h3>
+                        <p>Transform your outdoor space with expert planting tailored to your garden's unique conditions, creating a vibrant, sustainable oasis year-round.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US / EXPERIENCE THE DIFFERENCE (IMAGE 2) -->
+        <section class="experience-section">
+            <div class="experience-grid">
+                <!-- Left Card -->
+                <div class="experience-card reveal-up">
+                    <div class="experience-corner-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#1a4030">
+                            <ellipse cx="6" cy="6" rx="3.2" ry="1.6" transform="rotate(45 6 6)"/>
+                            <ellipse cx="18" cy="6" rx="3.2" ry="1.6" transform="rotate(-45 18 6)"/>
+                            <ellipse cx="6" cy="18" rx="3.2" ry="1.6" transform="rotate(-45 6 18)"/>
+                            <ellipse cx="18" cy="18" rx="3.2" ry="1.6" transform="rotate(45 18 18)"/>
+                        </svg>
+                    </div>
+                    <span class="section-subtitle">WHY CHOOSE US</span>
+                    <h2>Experience the Difference<br>in Gardering</h2>
+                    <p class="experience-desc">We deliver exceptional service that keeps you coming back. Our goal is to build lasting relationships by treating you like family.</p>
+                    
+                    <ul class="experience-bullets">
+                        <li class="experience-bullet-item reveal-up" style="transition-delay: 0.1s;">
+                            <div class="experience-bullet-badge float-anim">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                    <line x1="12" y1="3" x2="12" y2="21"/>
+                                    <line x1="3" y1="12" x2="21" y2="12"/>
+                                    <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                    <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                </svg>
+                            </div>
+                            <span class="experience-bullet-text">Honest and open communication from start to finish</span>
+                        </li>
+                        <li class="experience-bullet-item reveal-up" style="transition-delay: 0.2s;">
+                            <div class="experience-bullet-badge float-anim">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                    <line x1="12" y1="3" x2="12" y2="21"/>
+                                    <line x1="3" y1="12" x2="21" y2="12"/>
+                                    <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                    <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                </svg>
+                            </div>
+                            <span class="experience-bullet-text">A dedicated team ready to follow your schedule</span>
+                        </li>
+                        <li class="experience-bullet-item reveal-up" style="transition-delay: 0.3s;">
+                            <div class="experience-bullet-badge float-anim">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                    <line x1="12" y1="3" x2="12" y2="21"/>
+                                    <line x1="3" y1="12" x2="21" y2="12"/>
+                                    <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                    <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                </svg>
+                            </div>
+                            <span class="experience-bullet-text">Transparent pricing that never includes hidden fees</span>
+                        </li>
+                        <li class="experience-bullet-item reveal-up" style="transition-delay: 0.4s;">
+                            <div class="experience-bullet-badge float-anim">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                    <line x1="12" y1="3" x2="12" y2="21"/>
+                                    <line x1="3" y1="12" x2="21" y2="12"/>
+                                    <line x1="5.64" y1="5.64" x2="18.36" y2="18.36"/>
+                                    <line x1="5.64" y1="18.36" x2="18.36" y2="5.64"/>
+                                </svg>
+                            </div>
+                            <span class="experience-bullet-text">Proud members of ILCA, NALP &amp; SIMA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Card Image -->
+                <div class="experience-img-wrap reveal-scale" style="transition-delay: 0.15s;">
+                    <img src="assets/gardening_cypress_stairs.jpg" alt="Grand landscaped garden staircase flanked by cypress trees">
+                </div>
+            </div>
+        </section>
+
+        <!-- FREQUENTLY ASKED QUESTIONS & TESTIMONIAL (IMAGE 3) -->
+        <section class="faq-section">
+            <div class="faq-grid">
+                <!-- Left Column: Accordion -->
+                <div class="faq-left reveal-up">
+                    <span class="section-subtitle">WHY CHOOSE US</span>
+                    <h2>Frequently Asked<br>Questions</h2>
+
+                    <div class="faq-accordion">
+                        <div class="faq-item active reveal-up" style="transition-delay: 0.05s;">
+                            <button class="faq-question" type="button">
+                                <span>How often do you recommend scheduling garden maintenance?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>For optimal plant health and a neat, tidy appearance, we recommend bi-weekly or monthly maintenance during spring and summer for mowing, weeding, and shaping. During autumn and winter, seasonal visits for leaf clearance, mulch replenishment, and pruning keep your garden pristine.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item reveal-up" style="transition-delay: 0.1s;">
+                            <button class="faq-question" type="button">
+                                <span>Can you work with existing garden features?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely! We love integrating mature trees, favorite perennial plantings, and existing stonework or hardscape features into refreshed, modern designs while preserving the elements you cherish most.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item reveal-up" style="transition-delay: 0.15s;">
+                            <button class="faq-question" type="button">
+                                <span>How do you determine the cost of garden landscaping?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We evaluate your property's unique dimensions, soil preparation requirements, plant choices, hardscape materials, and project scope to provide a detailed, transparent, itemized estimate with zero hidden surprises.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item reveal-up" style="transition-delay: 0.2s;">
+                            <button class="faq-question" type="button">
+                                <span>What types of plants do you typically recommend?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We select hardy, climate-adapted native perennials, evergreen shrubs, and ornamental varieties tailored to Hamilton and Southern Ontario's climate, ensuring vibrant color, healthy roots, and low-maintenance beauty year-round.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item reveal-up" style="transition-delay: 0.25s;">
+                            <button class="faq-question" type="button">
+                                <span>How long does a typical garden makeover take?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Small garden bed overhauls and replantings typically take 2 to 4 days. Larger landscape transformations, complete sod installation, and multi-tier gardens usually take 1 to 2 weeks depending on weather and scope.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item reveal-up" style="transition-delay: 0.3s;">
+                            <button class="faq-question" type="button">
+                                <span>Do you offer eco-friendly gardening solutions?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, sustainability is at our core. We offer organic soil conditioning, natural mulch, water-smart drip irrigation systems, drought-resilient plantings, and pollinator-friendly garden designs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Testimonial Card -->
+                <div class="faq-testimonial-wrap reveal-scale" style="transition-delay: 0.2s;">
+                    <a href="#contact" class="testimonial-card-link" style="display:block;text-decoration:none;">
+                        <img src="assets/gardening_testimonial_card.png" alt="What Our Clients Say - Customer Rating 4.8">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact" style="background-image: url('assets/contact_bg.jpg');">
+            <div class="contact-overlay"></div>
+            <div class="contact-container">
+                <!-- Left Info Box -->
+                <div class="contact-left reveal-up">
+                    <p class="section-subtitle-white">GET IN TOUCH</p>
+                    <h2>Free Quote &amp;<br>Consultation</h2>
+                    
+                    <ul class="contact-bullets">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#99ab3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Hardscaping &amp; Softscaping
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#99ab3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Ground Maintenance
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#99ab3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Garden Design &amp; Planting
+                        </li>
+                    </ul>
+
+                    <div class="contact-divider"></div>
+
+                    <div class="contact-phone">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#99ab3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div class="phone-info">
+                            <span class="phone-label">Call Us</span>
+                            <span class="phone-number">+1 289-680-5851</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Box -->
+                <div class="contact-right reveal-up" style="transition-delay: 0.2s;">
+                    <div class="leaf-decoration float-anim">
+                        <svg viewBox="0 0 120 70" width="120" height="70" fill="#99ab3a">
+                            <path d="M60 70 C40 50, 45 10, 60 0 C75 10, 80 50, 60 70 Z"/>
+                            <path d="M45 60 C20 55, -5 30, 5 15 C20 20, 35 40, 45 60 Z"/>
+                            <path d="M75 60 C100 55, 125 30, 115 15 C100 20, 85 40, 75 60 Z"/>
+                        </svg>
+                    </div>
+                    
+                    <p class="form-desc">We'll schedule a visit and provide a free, no-obligation quote tailored to your needs</p>
+                    
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(289) 680-5851" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="450 Cumberland Ave" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Comments</label>
+                            <textarea id="comments" name="comments" placeholder="Write your comments" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Submit Form</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Top Section -->
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="#99ab3a">
+                        <path d="M12 2L14.4 7.2L20 7.8L15.6 11.4L17 17L12 14L7 17L8.4 11.4L4 7.8L9.6 7.2L12 2Z" />
+                    </svg>
+                    <span>EJM Landscape</span>
+                </div>
+                
+                <div class="footer-top-content reveal-up">
+                    <div class="footer-cta">
+                        <h2>Ready to Transform Your<br>Outdoor Space?</h2>
+                        <div class="footer-cta-actions">
+                            <a href="#contact" class="btn-primary" style="background-color: #99ab3a; color: var(--dark-green); padding: 12px 25px; border-radius: 4px; text-decoration: none; font-weight: 600;">Request a Quote</a>
+                            <div class="footer-phone">
+                                <span class="footer-phone-label">CALL US</span>
+                                <div class="footer-phone-number">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    +1 289-680-5851
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-info">
+                        <div class="footer-info-block">
+                            <h4>ADDRESS</h4>
+                            <p>450 Cumberland Ave, Hamilton, ON L8M 0A1, Canada</p>
+                        </div>
+                        <div class="footer-info-block">
+                            <h4>BUSINESS HOURS</h4>
+                            <p>Mon-Sun: 7:00 a.m. - 7:00 p.m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-middle reveal-up" style="transition-delay: 0.2s;">
+                <nav class="footer-nav">
+                    <a href="index.html#about">About us</a>
+                    <a href="gardering.html">Services</a>
+                    <a href="index.html#gallery">Gallery</a>
+                    <a href="index.html#blog">Blog</a>
+                    <a href="index.html#faq">FAQ</a>
+                    <a href="index.html#reviews">Reviews</a>
+                </nav>
+                <div class="footer-socials">
+                    <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5l-10 14M22 12H2M19 17L5 7" /></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.8l.2-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom reveal-up" style="transition-delay: 0.4s;">
+                <div class="footer-copyright">
+                    &copy; 2026 EJM Landscape. All rights reserved. <a href="#">Terms</a>
+                </div>
+                <button class="btn-scroll-top" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJM Landscape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0L13.8 4.2L18 2.4L18.6 7.2L23.4 8.4L20.4 12L23.4 15.6L18.6 16.8L18 21.6L13.8 19.8L12 24L10.2 19.8L6 21.6L5.4 16.8L0.6 15.6L3.6 12L0.6 8.4L5.4 7.2L6 2.4L10.2 4.2L12 0Z" fill="#a6b835"/>
+                <path d="M12 5.4L13.2 8.4L16.2 7.2L15.6 10.8L19.2 11.4L16.8 13.8L19.2 16.2L15.6 16.8L16.2 20.4L13.2 19.2L12 22.2L10.8 19.2L7.8 20.4L8.4 16.8L4.8 16.2L7.2 13.8L4.8 11.4L8.4 10.8L7.8 7.2L10.8 8.4L12 5.4Z" fill="#1a4030"/>
+            </svg>
+            <span>EJM Landscape</span>
+        </div>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12" class="line-middle"></line>
+                <line x1="3" y1="6" x2="21" y2="6" class="line-top"></line>
+                <line x1="3" y1="18" x2="21" y2="18" class="line-bottom"></line>
+            </svg>
+        </button>
+
+        <div class="nav-menu">
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">About us</a>
+                <a href="gardering.html">Services</a>
+                <a href="#">Gallery</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact us</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+12896805851" class="btn btn-lime">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    +1 289-680-5851
+                </a>
+                <a href="#" class="btn btn-dark">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SCROLL-SCRUBBED FRAME-SEQUENCE HERO SECTION -->
+        <section class="hero-scroll-section" id="hero-scroll-section">
+            <div class="hero-pin-wrapper" id="hero-pin-wrapper">
+                <canvas id="hero-canvas" class="hero-canvas"></canvas>
+                <div class="hero-canvas-overlay"></div>
+
+                <!-- Initial Hero Content (Fades out on scroll) -->
+                <div class="hero-content hero-content-start" id="hero-content-start">
+                    <h1>
+                        We Bring Your<br>
+                        Garden <span class="highlight">to Life
+                            <svg class="underline" viewBox="0 0 240 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10 Q 60 5, 120 12 T 235 15" stroke="#a6b835" stroke-width="6" fill="transparent" stroke-linecap="round"/>
+                                <path d="M15 18 Q 80 15, 150 16 T 225 18" stroke="#a6b835" stroke-width="4" fill="transparent" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </h1>
+                    <p class="hero-hook-copy">What if your yard could stop people mid-walk?</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-lime">Explore Projects</a>
+                        <a href="#contact" class="btn btn-dark-transparent">Request a Quote</a>
+                    </div>
+                </div>
+
+                <!-- Transformed Hero Content (Fades in at end of transformation) -->
+                <div class="hero-content hero-content-end" id="hero-content-end">
+                    <span class="hero-transform-badge">Transformation Complete</span>
+                    <h1>
+                        Your Dream Garden,<br>
+                        <span class="highlight">Brought to Life
+                            <svg class="underline" viewBox="0 0 240 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10 Q 60 5, 120 12 T 235 15" stroke="#a6b835" stroke-width="6" fill="transparent" stroke-linecap="round"/>
+                                <path d="M15 18 Q 80 15, 150 16 T 225 18" stroke="#a6b835" stroke-width="4" fill="transparent" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </h1>
+                    <div class="hero-supporting-copy">
+                        <p class="hero-subline-lead">This isn't landscaping. It's a first impression, reinvented.</p>
+                        <p class="hero-subline-tag">Designed to be noticed. Built to last.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-lime">Get Your Transformation</a>
+                        <a href="#projects" class="btn btn-dark-transparent">Explore Our Work</a>
+                    </div>
+                </div>
+
+                <!-- Interactive Scroll Hint -->
+                <div class="hero-scroll-indicator" id="hero-scroll-hint">
+                    <span>Scroll to Transform</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Customer Rating Badge -->
+                <div class="customer-rating" id="hero-rating">
+                    <div class="rating-badge">
+                        <div class="rating-flower">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0L14.25 5.25L19.5 3L20.25 9L26.25 10.5L22.5 15L26.25 19.5L20.25 21L19.5 27L14.25 24.75L12 30L9.75 24.75L4.5 27L3.75 21L-2.25 19.5L1.5 15L-2.25 10.5L3.75 9L4.5 3L9.75 5.25L12 0Z" fill="#a6b835"/>
+                            </svg>
+                            <span class="rating-score">4.8</span>
+                        </div>
+                        <span class="rating-text">Customer Rating</span>
+                    </div>
+                </div>
+
+                <!-- Lightweight Preload State -->
+                <div class="hero-loader" id="hero-loader">
+                    <div class="hero-loader-spinner"></div>
+                    <div class="hero-loader-text">Loading Experience <span id="hero-loader-pct">0%</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-bar">
+            <div class="feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L13.8 4.2L18 2.4L18.6 7.2L23.4 8.4L20.4 12L23.4 15.6L18.6 16.8L18 21.6L13.8 19.8L12 24L10.2 19.8L6 21.6L5.4 16.8L0.6 15.6L3.6 12L0.6 8.4L5.4 7.2L6 2.4L10.2 4.2L12 0Z" fill="#a6b835"/>
+                </svg>
+                <span>Trusted By 1000+ Clients</span>
+            </div>
+            <div class="feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L13.8 4.2L18 2.4L18.6 7.2L23.4 8.4L20.4 12L23.4 15.6L18.6 16.8L18 21.6L13.8 19.8L12 24L10.2 19.8L6 21.6L5.4 16.8L0.6 15.6L3.6 12L0.6 8.4L5.4 7.2L6 2.4L10.2 4.2L12 0Z" fill="#a6b835"/>
+                </svg>
+                <span>Commitment to High Standards</span>
+            </div>
+            <div class="feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L13.8 4.2L18 2.4L18.6 7.2L23.4 8.4L20.4 12L23.4 15.6L18.6 16.8L18 21.6L13.8 19.8L12 24L10.2 19.8L6 21.6L5.4 16.8L0.6 15.6L3.6 12L0.6 8.4L5.4 7.2L6 2.4L10.2 4.2L12 0Z" fill="#a6b835"/>
+                </svg>
+                <span>Award Winning Landscape Company</span>
+            </div>
+        </section>
+        
+        <section class="about-section">
+            <div class="about-left reveal-up">
+                <p class="section-subtitle">WHO WE ARE</p>
+                <h2>Boutique<br>Landscape<br>Design & Garden</h2>
+                <div class="award-badge">
+                    <div class="badge-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" fill="#a2b72f" stroke="#113c27" stroke-width="2"/>
+                            <path d="M12 5L13.5 9.5H18L14.25 12.5L15.75 17L12 14L8.25 17L9.75 12.5L6 9.5H10.5L12 5Z" fill="#113c27"/>
+                        </svg>
+                    </div>
+                    <p class="badge-text">BEST RATED LANDSCAPING<br>COMPANY 2025</p>
+                </div>
+            </div>
+            
+            <div class="about-center reveal-fade" style="transition-delay: 0.2s;">
+                <div class="arch-image-container">
+                    <img src="assets/worker.jpg" alt="Landscaper Team">
+                </div>
+                <div class="about-action-card">
+                    <button class="btn btn-grey">More About Us</button>
+                </div>
+            </div>
+
+            <div class="about-right reveal-up" style="transition-delay: 0.4s;">
+                <p class="about-description">Locally owned landscape design company since 2012. Licensed and based in Hamilton, ON, with 12+ years of experience creating natural, timeless outdoor spaces. Personal approach, honest work, and a passion for greenery at the heart of every project.</p>
+                
+                <ul class="about-list">
+                    <li>
+                        <span class="list-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#a2b72f"/>
+                                <path d="M12 4V20M4 12H20M6 6L18 18M6 18L18 6" stroke="#113c27" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span>Family-Owned & Operated</span>
+                    </li>
+                    <li>
+                        <span class="list-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#a2b72f"/>
+                                <path d="M12 4V20M4 12H20M6 6L18 18M6 18L18 6" stroke="#113c27" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span>Licensed & Insured</span>
+                    </li>
+                    <li>
+                        <span class="list-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#a2b72f"/>
+                                <path d="M12 4V20M4 12H20M6 6L18 18M6 18L18 6" stroke="#113c27" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span>Custom, Nature-Inspired Designs</span>
+                    </li>
+                    <li>
+                        <span class="list-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#a2b72f"/>
+                                <path d="M12 4V20M4 12H20M6 6L18 18M6 18L18 6" stroke="#113c27" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span>Trusted Local Business with Personal Service</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="services-header reveal-up">
+                <p class="section-subtitle">OUR SERVICES</p>
+                <h2>Landscaping Solutions for Homes<br>and Businesses</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <a href="gardering.html" class="service-card reveal-up" style="transition-delay: 0s;">
+                    <div class="service-image-wrap">
+                        <img src="assets/service1.jpg" alt="Gardening">
+                    </div>
+                    <div class="service-info">
+                        <h3>Gardening</h3>
+                        <p>Crafting stunning garden spaces that bring your outdoor vision to life with beauty and precision.</p>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="gardering.html" class="service-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="service-image-wrap">
+                        <img src="assets/service2.jpg" alt="Landscaping">
+                    </div>
+                    <div class="service-info">
+                        <h3>Landscaping</h3>
+                        <p>Transformative landscape design and construction that elevate outdoor living.</p>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="gardering.html" class="service-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="service-image-wrap">
+                        <img src="assets/service3.jpg" alt="Turfing">
+                    </div>
+                    <div class="service-info">
+                        <h3>Turfing</h3>
+                        <p>Premium turf installation and expert maintenance for lush, healthy lawns year-round.</p>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="gardering.html" class="service-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="service-image-wrap">
+                        <img src="assets/service4.jpg" alt="Tree Care">
+                    </div>
+                    <div class="service-info">
+                        <h3>Tree Care</h3>
+                        <p>Designing stunning garden spaces that elegantly bring your outdoor vision to life.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-footer" style="margin-top: 60px;">
+                <a href="#" class="btn btn-services">More Services</a>
+            </div>
+        </section>
+
+        <section class="why-section">
+            <div class="why-header reveal-up">
+                <p class="section-subtitle">ADVANTAGES</p>
+                <h2>Why Choose us?</h2>
+            </div>
+            
+            <div class="why-grid">
+                <div class="why-col why-left">
+                    <div class="why-item why-item-1 reveal-up" style="transition-delay: 0s;">
+                        <h3>Client-Focused Design</h3>
+                        <p>Unique landscapes tailored to individual needs.</p>
+                    </div>
+                    <div class="why-item why-item-2 reveal-up" style="transition-delay: 0.1s;">
+                        <h3>Quality Materials</h3>
+                        <p>Only the finest plants and materials used.</p>
+                    </div>
+                    <div class="why-item why-item-3 reveal-up" style="transition-delay: 0.2s;">
+                        <h3>Team of Experts</h3>
+                        <p>Professionals dedicated to bringing dreams to life.</p>
+                    </div>
+                </div>
+                
+                <div class="why-col why-center">
+                    <div class="rotating-leaves-wrapper float-anim">
+                        <svg viewBox="-100 -100 200 200" class="leaves-svg" id="rotating-leaves">
+                            <g id="petal">
+                                <path d="M0,0 Q30,-50 0,-100 Q-30,-50 0,0 Z" />
+                            </g>
+                            <use href="#petal" transform="rotate(0)" fill="#a2b72f"/>
+                            <use href="#petal" transform="rotate(45)" fill="#788b22"/>
+                            <use href="#petal" transform="rotate(90)" fill="#a2b72f"/>
+                            <use href="#petal" transform="rotate(135)" fill="#788b22"/>
+                            <use href="#petal" transform="rotate(180)" fill="#a2b72f"/>
+                            <use href="#petal" transform="rotate(225)" fill="#788b22"/>
+                            <use href="#petal" transform="rotate(270)" fill="#a2b72f"/>
+                            <use href="#petal" transform="rotate(315)" fill="#788b22"/>
+                        </svg>
+                    </div>
+                    <div class="center-image reveal-scale">
+                        <img src="assets/why_choose.jpg" alt="Landscaper trimming hedge">
+                    </div>
+                </div>
+                
+                <div class="why-col why-right">
+                    <div class="why-item why-item-4 reveal-up" style="transition-delay: 0s;">
+                        <h3>Transformative Impact</h3>
+                        <p>Creating spaces that promote happiness.</p>
+                    </div>
+                    <div class="why-item why-item-5 reveal-up" style="transition-delay: 0.1s;">
+                        <h3>Attention to Detail</h3>
+                        <p>Careful execution that enhances project outcomes.</p>
+                    </div>
+                    <div class="why-item why-item-6 reveal-up" style="transition-delay: 0.2s;">
+                        <h3>Established Reputation</h3>
+                        <p>Trusted leader in upscale landscaping solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-footer" style="margin-top: 60px; padding-bottom: 40px;">
+                <a href="#" class="btn btn-services">Request Quote</a>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="projects-header reveal-up">
+                <div class="projects-title">
+                    <h2>Each Project is Made<br>with Love</h2>
+                </div>
+                <div class="projects-action">
+                    <a href="#" class="btn btn-lime" style="border-radius: 8px; padding: 15px 30px; font-weight: 600;">View All Projects</a>
+                </div>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" id="prev-btn" aria-label="Previous">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#113c27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                </button>
+                
+                <div class="carousel-track" id="carousel-track">
+                    <div class="project-card reveal-up" style="transition-delay: 0s;">
+                        <div class="project-image">
+                            <img src="assets/pergola.jpg" alt="Pergola Builder">
+                        </div>
+                        <div class="project-info">
+                            <h3>Pergola Builder</h3>
+                            <p class="category">PERGOLAS</p>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="project-image">
+                            <img src="assets/service2.jpg" alt="Back Yard Renovation">
+                        </div>
+                        <div class="project-info">
+                            <h3>Back Yard Renovation</h3>
+                            <p class="category">LANDSCAPES</p>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="project-image">
+                            <img src="assets/outdoor_dining.jpg" alt="Outdoor Dining Area">
+                        </div>
+                        <div class="project-info">
+                            <h3>Outdoor Dining Area</h3>
+                            <p class="category">PATIOS</p>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-up" style="transition-delay: 0.3s;">
+                        <div class="project-image">
+                            <img src="assets/pasadena.jpg" alt="Pasadena Back Yard">
+                        </div>
+                        <div class="project-info">
+                            <h3>Pasadena Back Yard</h3>
+                            <p class="category">LANDSCAPES</p>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-up" style="transition-delay: 0.4s;">
+                        <div class="project-image">
+                            <img src="assets/pool.jpg" alt="Custom Pool Design">
+                        </div>
+                        <div class="project-info">
+                            <h3>Custom Pool Design</h3>
+                            <p class="category">POOLS</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next-btn" id="next-btn" aria-label="Next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#113c27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="google-reviews-section">
+            <div class="gr-header reveal-up">
+                <div class="gr-header-left">
+                    <h2>Customer testimonials on Google</h2>
+                    <div class="gr-rating">
+                        <div class="gr-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        </div>
+                        <span>4.9 rating of 19 reviews</span>
+                    </div>
+                </div>
+                <div class="gr-header-right">
+                    <a href="#" class="btn-google-review">Review us on Google</a>
+                </div>
+            </div>
+            
+            <div class="gr-grid">
+                <!-- Card 1 -->
+                <div class="gr-card reveal-up" style="transition-delay: 0s;">
+                    <div class="gr-card-header">
+                        <div class="gr-user">
+                            <div class="gr-avatar" style="background-color: #1a4b8c;">E</div>
+                            <div class="gr-user-info">
+                                <strong>Emmanuel</strong>
+                                <span>a year ago</span>
+                            </div>
+                        </div>
+                        <div class="gr-google-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gr-card-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                    </div>
+                    <div class="gr-card-text">
+                        Unbelievable product and service. Just had a fantastic 1.5 hour demo with Laze where he took me through every possible use case for their.. <strong>See more</strong>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="gr-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="gr-card-header">
+                        <div class="gr-user">
+                            <div class="gr-avatar" style="background-image: url('assets/service1.jpg');"></div>
+                            <div class="gr-user-info">
+                                <strong>Ryan</strong>
+                                <span>a year ago</span>
+                            </div>
+                        </div>
+                        <div class="gr-google-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gr-card-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                    </div>
+                    <div class="gr-card-text">
+                        The team at EmbedSocial is so easy to work with. They are very quick to respond to any special requests and fast to implement account changes. <strong>See more</strong>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="gr-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="gr-card-header">
+                        <div class="gr-user">
+                            <div class="gr-avatar" style="background-color: #6b228b;">K</div>
+                            <div class="gr-user-info">
+                                <strong>Karl</strong>
+                                <span>a month ago</span>
+                            </div>
+                        </div>
+                        <div class="gr-google-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gr-card-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                    </div>
+                    <div class="gr-card-text">
+                        I deal with a number of software companies on a daily basis and I can 100% say that this one stands out for customer service. <strong>See more</strong>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="gr-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="gr-card-header">
+                        <div class="gr-user">
+                            <div class="gr-avatar" style="background-image: url('assets/review.jpg');"></div>
+                            <div class="gr-user-info">
+                                <strong>Basie</strong>
+                                <span>5 months ago</span>
+                            </div>
+                        </div>
+                        <div class="gr-google-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gr-card-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                    </div>
+                    <div class="gr-card-text">
+                        Helped me understand Google reviews and the importance thereof.
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="gr-card reveal-up" style="transition-delay: 0.4s;">
+                    <div class="gr-card-header">
+                        <div class="gr-user">
+                            <div class="gr-avatar" style="background-image: url('assets/service2.jpg');"></div>
+                            <div class="gr-user-info">
+                                <strong>Beso</strong>
+                                <span>6 months ago</span>
+                            </div>
+                        </div>
+                        <div class="gr-google-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gr-card-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                    </div>
+                    <div class="gr-card-text">
+                        EmbedSocial does a great job!
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="gr-card reveal-up" style="transition-delay: 0.5s;">
+                    <div class="gr-card-header">
+                        <div class="gr-user">
+                            <div class="gr-avatar" style="background-image: url('assets/service3.jpg');"></div>
+                            <div class="gr-user-info">
+                                <strong>Girts</strong>
+                                <span>7 months ago</span>
+                            </div>
+                        </div>
+                        <div class="gr-google-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gr-card-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#fbbc04"/></svg>
+                    </div>
+                    <div class="gr-card-text">
+                        Amazing solutions for websites. Great company, great support! Recommend!
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" style="background-image: url('assets/contact_bg.jpg');">
+            <div class="contact-overlay"></div>
+            <div class="contact-container">
+                <!-- Left Info Box -->
+                <div class="contact-left reveal-up" style="transition-delay: 0s;">
+                    <h2>Free Quote &<br>Consultation</h2>
+                    <p class="contact-desc">We're here to help with all your urban landscape design needs.</p>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <div class="icon-asterisk">
+                                <svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 2v20m9.5-16.5l-19 13m19 0l-19-13" stroke="var(--dark-green)" stroke-width="3" stroke-linecap="round"/></svg>
+                            </div>
+                            Complete Garden Makeovers
+                        </li>
+                        <li>
+                            <div class="icon-asterisk">
+                                <svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 2v20m9.5-16.5l-19 13m19 0l-19-13" stroke="var(--dark-green)" stroke-width="3" stroke-linecap="round"/></svg>
+                            </div>
+                            Professional Landscaping
+                        </li>
+                        <li>
+                            <div class="icon-asterisk">
+                                <svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 2v20m9.5-16.5l-19 13m19 0l-19-13" stroke="var(--dark-green)" stroke-width="3" stroke-linecap="round"/></svg>
+                            </div>
+                            Premium Turf Installation
+                        </li>
+                        <li>
+                            <div class="icon-asterisk">
+                                <svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 2v20m9.5-16.5l-19 13m19 0l-19-13" stroke="var(--dark-green)" stroke-width="3" stroke-linecap="round"/></svg>
+                            </div>
+                            Garden Design & Planting
+                        </li>
+                    </ul>
+
+                    <div class="contact-divider"></div>
+
+                    <div class="contact-phone">
+                        <a href="tel:+12896805851">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#99ab3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div class="phone-info">
+                                <span class="phone-label">Call Us</span>
+                                <span class="phone-number">+1 289-680-5851</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Form Box -->
+                <div class="contact-right reveal-up" style="transition-delay: 0.2s;">
+                    <div class="leaf-decoration float-anim">
+                        <svg viewBox="0 0 120 70" width="120" height="70" fill="#99ab3a">
+                            <!-- Center main leaf -->
+                            <path d="M60 70 C40 50, 45 10, 60 0 C75 10, 80 50, 60 70 Z"/>
+                            <!-- Left leaf -->
+                            <path d="M45 60 C20 55, -5 30, 5 15 C20 20, 35 40, 45 60 Z"/>
+                            <!-- Right leaf -->
+                            <path d="M75 60 C100 55, 125 30, 115 15 C100 20, 85 40, 75 60 Z"/>
+                        </svg>
+                    </div>
+                    
+                    <p class="form-desc">We'll schedule a visit and provide a free, no-obligation quote tailored to your needs</p>
+                    
+                    <form class="quote-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Your name</label>
+                                <input type="text" placeholder="e.g. John Smit">
+                            </div>
+                            <div class="form-group">
+                                <label>Email address</label>
+                                <input type="email" placeholder="e.g. john@youremail.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Phone number</label>
+                                <input type="tel" placeholder="e.g. +1 230 440 550">
+                            </div>
+                            <div class="form-group">
+                                <label>Select a service</label>
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option>Select a service</option>
+                                        <option>Complete Garden Makeovers</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Describe your project" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Top Section -->
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="#99ab3a">
+                        <!-- Evergreen flower logo -->
+                        <path d="M12 2L14.4 7.2L20 7.8L15.6 11.4L17 17L12 14L7 17L8.4 11.4L4 7.8L9.6 7.2L12 2Z" />
+                    </svg>
+                    <span>EJM Landscape</span>
+                </div>
+                
+                <div class="footer-top-content reveal-up">
+                    <div class="footer-cta">
+                        <h2>Ready to Transform Your<br>Outdoor Space?</h2>
+                        <div class="footer-cta-actions">
+                            <a href="#" class="btn-primary" style="background-color: #99ab3a; color: var(--dark-green); padding: 12px 25px; border-radius: 4px; text-decoration: none; font-weight: 600;">Request a Quote</a>
+                            <div class="footer-phone">
+                                <span class="footer-phone-label">CALL US</span>
+                                <div class="footer-phone-number">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    +1 289-680-5851
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-info">
+                        <div class="footer-info-block">
+                            <h4>ADDRESS</h4>
+                            <p>450 Cumberland Ave, Hamilton, ON L8M 0A1, Canada</p>
+                        </div>
+                        <div class="footer-info-block">
+                            <h4>BUSINESS HOURS</h4>
+                            <p>Mon-Sun: 7:00 a.m. - 7:00 p.m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-middle reveal-up" style="transition-delay: 0.2s;">
+                <nav class="footer-nav">
+                    <a href="#">About us</a>
+                    <a href="gardering.html">Services</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Reviews</a>
+                </nav>
+                <div class="footer-socials">
+                    <!-- Instagram -->
+                    <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <!-- Yelp or flower? Just generic asterisk/flower -->
+                    <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5l-10 14M22 12H2M19 17L5 7" /></svg></a>
+                    <!-- Facebook -->
+                    <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.8l.2-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <!-- LinkedIn -->
+                    <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom reveal-up" style="transition-delay: 0.4s;">
+                <div class="footer-copyright">
+                    © 2026 VamTam. All rights reserved. <a href="#">Terms</a>
+                </div>
+                <button class="btn-scroll-top" aria-label="Scroll to top">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger for performance-optimized hero pin/scrub animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
